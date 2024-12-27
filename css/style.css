@@ -76,6 +76,8 @@ li {
 }
 .navbar__bouton {
   background: rgb(147, 86, 220);
+  background: -moz-linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+  background: -webkit-linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
   border-style: solid;
@@ -85,7 +87,6 @@ li {
   padding: 5px 10px;
   color: #f6f6f6;
   text-align: center;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 15px 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -112,53 +113,29 @@ li {
   padding-bottom: 20px;
   padding-top: 20px;
   border-radius: 20px;
-  font-weight: 500;
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
-  border-style: solid;
-  border-color: var(#F6F6F6);
-  position: relative;
-}
-.fonctionnement__bouton i {
-  margin-right: 50px;
-}
-.fonctionnement__bouton span {
-  background-color: #9356DC;
-  color: #FFFFFF;
-  border-radius: 50%;
-  padding: 6px;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: -14px;
 }
 
 .restaurant {
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
   box-sizing: border-box;
   border-radius: 15px;
-  width: 100%;
-  background-color: #FFFFFF;
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .restaurant__image {
   border-radius: 15px;
-  height: 251px;
 }
 .restaurant__title {
   color: #000000;
   font-size: 1.125rem;
   font-weight: 700;
-  padding-top: 10px;
-  padding-left: 10px;
 }
 .restaurant__subtitle {
   font-size: 1rem;
   font-weight: 300;
-  padding-left: 10px;
 }
 .restaurant__like-btn {
-  padding-left: 20px;
+  margin-left: 32px;
   display: flex;
   cursor: pointer;
 }
@@ -166,28 +143,29 @@ li {
   font-weight: 100;
   background: #101010;
   font-size: 1.5rem;
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
   transition: transform 300ms ease-in-out;
 }
 .restaurant__like-btn .fa-heart:hover {
   font-weight: 700;
   background: rgb(147, 86, 220);
+  background: -moz-linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+  background: -webkit-linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
   transform: scale(1.02);
 }
 .restaurant__like-btn .checked .fa-heart {
   font-weight: 700;
   background: rgb(147, 86, 220);
+  background: -moz-linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
+  background: -webkit-linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9356dc",endColorstr="#ff79da",GradientType=1);
-  -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -224,18 +202,12 @@ li {
   background-color: #353535;
   color: #FFFFFF;
   font-size: 1.125rem;
-  padding-left: 25px;
-  padding-top: 20px;
 }
 .footer__title {
   font-family: "Shrikhand", serif;
   font-style: italic;
   font-size: 1rem;
   color: #FFFFFF;
-  padding-bottom: 15px;
-}
-.footer__link {
-  margin-bottom: 8px;
 }
 
 .restaurants {
@@ -243,14 +215,12 @@ li {
   flex-direction: column;
   justify-content: space-between;
   background-color: #F6F6F6;
-  padding-right: 20px;
-  padding-left: 20px;
-  gap: 18px;
-  padding-bottom: 60px;
 }
 .restaurants__title {
   margin-bottom: 30px;
   margin-top: 30px;
   font-size: 24px;
   font-weight: 700;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

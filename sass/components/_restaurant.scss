@@ -1,0 +1,41 @@
+@use "../utils/" as *;
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 100%;
+  background-color:$color-pure;
+  box-shadow: 0px 3px 15px 0px #0000001A;
+ 
+  
+  
+  &__image {
+    border-radius: 15px;
+    height: 251px;
+   
+   
+  }
+  &__title {
+    color:$color-pure-inverted;
+    font-size: $font-size-m;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+  }
+  &__subtitle {
+    font-size:$font-size-s;
+    font-weight: 300;
+    padding-left: 10px;
+    
+
+    
+  }
+  &__like-btn {
+    padding-left: 20px;
+    @include heart($font-weight-thin, $color-canvas-inverted, $font-size-l, $font-weight-bold);
+    
+  }
+}

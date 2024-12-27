@@ -1,0 +1,43 @@
+@use "../utils/" as *;
+
+.fonctionnement{
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+  padding: 0 20px;
+  padding-top: 40px;
+  margin-bottom: 50px;
+    &__title{
+        font-size: $font-size-l;
+        padding-top: 20px;
+        
+    }
+    &__bouton{
+        color: $color-pure-inverted;
+        font-family: $font-secondary;
+        font-size: $font-size-s;
+        background-color: $color-gris-clair;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 20px;
+        font-weight: 500;
+        box-shadow: 0px 3px 15px 0px #0000001A;
+        border-style: solid;
+        border-color: var(#F6F6F6);
+        position: relative;
+        i{
+        margin-right: 50px;
+        }
+        span{
+            background-color: $color-primaire;
+            color: $color-pure;
+            border-radius: 50%;
+            padding: 6px;
+            width: 24px;
+            height: 24px;
+            position: absolute; 
+            left: -14px;
+        }
+    }
+   
+}
