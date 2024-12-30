@@ -8,11 +8,12 @@
   width: 100%;
   background-color:$color-pure;
   box-shadow: 0px 3px 15px 0px #0000001A;
- 
+  
   
   
   &__image {
-    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     height: 251px;
    
    
@@ -34,8 +35,13 @@
     
   }
   &__like-btn {
-    padding-left: 20px;
-    @include heart($font-weight-thin, $color-canvas-inverted, $font-size-l, $font-weight-bold);
+    i{
+      padding-left: 300px;
+      
+    }
     
+    
+    
+
   }
 }

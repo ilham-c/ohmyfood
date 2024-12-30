@@ -22,11 +22,12 @@
         border-radius: 20px;
         font-weight: 500;
         box-shadow: 0px 3px 15px 0px #0000001A;
-        border-style: solid;
+        border-style: none;
         border-color: var(#F6F6F6);
         position: relative;
         i{
         margin-right: 50px;
+        color: #7E7E7E;
         }
         span{
             background-color: $color-primaire;
@@ -35,8 +36,14 @@
             padding: 6px;
             width: 24px;
             height: 24px;
+            font-family:$font-secondary ;
             position: absolute; 
             left: -14px;
+            padding-bottom: 22px;
+            text-align: center;
+            padding-right: 7px;
+            padding-top: 4px;
+
         }
     }
    
