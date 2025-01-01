@@ -1,6 +1,7 @@
 @import './../sass/layout/footer';
 @import './../sass/layout/header';
 
+
 body{
     margin: 0;
     padding: 0;
@@ -12,33 +13,27 @@ main{
     text-decoration: none;
     font-weight: normal;
 }
-h1{
-    margin: 0;
-}
-h2{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 18px;
-    padding-top: 20px;
-}
-h3{
-    padding: 7px;
-}
-p{
-    margin-top:-15px;
-    margin-left: 6px;
-}
 
-
-li{
+.listes{
     list-style: none;
     border-radius: 15px;
     background-color: #FFFFFF;
     height: 69px;
     padding-left: 15px;
-    
+    &__ennonces_menus{
+        padding: 7px;
+    }
+    &__accompagnements{
+        margin-top:-15px;
+        margin-left: 6px;
+    } 
 }
-ul{
+.price{
+    float: right;
+    padding-right: 5px;
+}
+
+.blocks{
     padding: 0;
     margin: 0;
     
@@ -57,8 +52,62 @@ ul{
     background-color: #F6F6F6;
 }
 .palettedugout-title{
+    margin: 0;
     font-family: shrikhand, serif; 
     padding-top: 20px;
     border-radius: 15px;
+    font-size: 28px;
+
+    
+  
+}
+.entrees__title{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 20px;
+    width: 40px;
+    border-bottom: 3px solid #99E2D0;
+
+}
+.plats__title{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 20px;
+    width: 40px;
+    border-bottom: 3px solid #99E2D0;
+}
+.desserts__title{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 20px;
+    width: 40px;
+    border-bottom: 3px solid #99E2D0;
+}
+.btn_commander{
+    border-radius: 25px;
+    border-style: none;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f6f6f6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    cursor:pointer;
+    font-family: "Roboto", sans-serif;
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    background-color:#FF79DA;
+
+
+
+
+
+
 }
 
