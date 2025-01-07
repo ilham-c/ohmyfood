@@ -1,5 +1,5 @@
-
-@mixin button-gradient {
+@mixin button-gradient
+ {
   background: rgb(147, 86, 220);
   background: -moz-linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 97%);
   background: -webkit-linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 97%);

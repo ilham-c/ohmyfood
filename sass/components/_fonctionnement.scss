@@ -13,20 +13,24 @@
         
     }
     &__bouton{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        height: 72px;
+        margin: 0px 20px;
         color: $color-pure-inverted;
         font-family: $font-secondary;
         font-size: $font-size-s;
         background-color: $color-gris-clair;
-        padding-bottom: 20px;
-        padding-top: 20px;
         border-radius: 20px;
         font-weight: 500;
         box-shadow: 0px 3px 15px 0px #0000001A;
         border-style: none;
-        border-color: var(#F6F6F6);
         position: relative;
         i{
-        margin-right: 50px;
+        margin-left: 20px;
         color: #7E7E7E;
         }
         span{
