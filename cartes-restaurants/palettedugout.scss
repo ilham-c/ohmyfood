@@ -27,6 +27,7 @@ main{
     background-color: #FFFFFF;
     height: 69px;
     padding-left: 15px;
+    
     &__ennonces_menus{
         padding: 7px;
     }
@@ -35,6 +36,7 @@ main{
         margin-left: 6px;
         font-size: 15px;
     } 
+    
 }
 .price{
     float: right;
@@ -61,7 +63,21 @@ main{
     background-color: #F6F6F6;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-}
+    animation: linear fond-carte;
+    animation-duration: auto;
+    animation-timeline: scroll view(inline);
+
+   }
+   @keyframes fond-carte {
+    from {
+        opacity: 0;
+        clip-path: inset(50% 0% 50% 0%);
+      }
+      to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+      }
+   }
 .palettedugout-title{
     margin: 0;
     font-family: shrikhand, serif; 
