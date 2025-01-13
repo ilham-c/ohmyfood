@@ -146,6 +146,12 @@ li {
   padding-top: 4px;
 }
 
+@media screen and (max-width: 1024px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -162,13 +168,6 @@ li {
   height: 251px;
   position: relative;
 }
-.restaurant__image span {
-  position: absolute;
-  border-radius: 2px;
-  color: #99E2D0;
-  top: 20px;
-  right: 20px;
-}
 .restaurant__title {
   color: #000000;
   font-size: 1.125rem;
@@ -181,6 +180,17 @@ li {
   font-weight: 300;
   padding-left: 10px;
   padding-bottom: 15px;
+  position: relative;
+}
+.restaurant .nouveau {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-weight: 500;
+  border-radius: 2px;
+  padding: 7px;
+  color: #008766;
+  background-color: #99E2D0;
 }
 .restaurant__like-btn {
   position: absolute;
@@ -266,6 +276,7 @@ li {
 }
 .footer__link {
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .restaurants {

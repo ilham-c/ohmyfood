@@ -17,17 +17,10 @@
     border-top-left-radius: 15px;
     height: 251px;
     position: relative;
-      span{
-        position: absolute;
-        border-radius: 2px;
-        color: $color-tertiaire;
-        top: 20px;
-        right: 20px;
-        
-      }
-   
-   
   }
+   
+   
+  
   &__title {
     color:$color-pure-inverted;
     font-size: $font-size-m;
@@ -40,9 +33,17 @@
     font-weight: 300;
     padding-left: 10px;
     padding-bottom: 15px;
-    
-
-    
+    position: relative;
+  }
+  .nouveau{
+      position: absolute;
+      right: 20px;
+      top: 15px;
+      font-weight: 500;
+      border-radius: 2px;
+      padding: 7px;
+      color: #008766;
+      background-color:$color-tertiaire ;
   }
   &__like-btn {
      position: absolute;

@@ -16,6 +16,7 @@
 }
 .footer__link {
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .header__img-container {
@@ -70,6 +71,10 @@
   bottom: 15px;
 }
 
+.go {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -89,6 +94,9 @@ main {
   background-color: #FFFFFF;
   height: 69px;
   padding-left: 15px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: defiler 1s ease-out forwards;
 }
 .listes__ennonces_menus {
   padding: 7px;
@@ -99,9 +107,23 @@ main {
   font-size: 15px;
 }
 
+@keyframes defiler {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .price {
   float: right;
   padding-right: 5px;
+}
+
+.element-hide {
+  background-color: #99E2D0;
 }
 
 .blocks {
@@ -126,23 +148,8 @@ main {
   background-color: #F6F6F6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  animation: linear fond-carte;
-  animation-duration: auto;
-  animation-timeline: scroll view(inline);
 }
 
-@keyframes fond-carte {
-  from {
-    opacity: 0;
-    -webkit-clip-path: inset(50% 0% 50% 0%);
-            clip-path: inset(50% 0% 50% 0%);
-  }
-  to {
-    opacity: 1;
-    -webkit-clip-path: inset(0% 0% 0% 0%);
-            clip-path: inset(0% 0% 0% 0%);
-  }
-}
 .palettedugout-title {
   margin: 0;
   font-family: shrikhand, serif;
