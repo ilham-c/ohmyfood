@@ -1,11 +1,13 @@
 .footer {
-  display: flex;
-  flex-direction: column;
   background-color: #353535;
   color: #FFFFFF;
   font-size: 1.125rem;
   padding-left: 25px;
   padding-top: 20px;
+}
+.footer__lists {
+  display: flex;
+  flex-direction: column;
 }
 .footer__title {
   font-family: "Shrikhand", serif;
@@ -19,6 +21,12 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__lists {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .header__img-container {
   display: flex;
   justify-content: center;

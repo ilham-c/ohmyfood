@@ -63,6 +63,7 @@ li {
   flex-direction: column;
   gap: 20px;
   padding-block: 35px;
+  margin-bottom: 40px;
 }
 .navbar__title {
   padding-inline: 15px;
@@ -97,25 +98,26 @@ li {
 }
 
 .fonctionnement {
-  display: flex;
-  flex-direction: column;
   gap: 16px;
-  padding: 0 20px;
   padding-top: 40px;
   margin-bottom: 50px;
+  padding: 0 20px;
 }
 .fonctionnement__title {
   font-size: 1.5rem;
   padding-top: 20px;
+}
+.fonctionnement__lists {
+  margin-top: 35px;
 }
 .fonctionnement__bouton {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  width: 100%;
   gap: 20px;
   height: 72px;
-  margin: 0px 20px;
   color: #000000;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -146,10 +148,25 @@ li {
   padding-top: 4px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .fonctionnement {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  .fonctionnement__bouton {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 322px;
+  }
+  .fonctionnement__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
   }
 }
 .restaurant {
@@ -161,6 +178,7 @@ li {
   background-color: #FFFFFF;
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1019607843);
   position: relative;
+  margin-bottom: 15px;
 }
 .restaurant__image {
   border-top-right-radius: 15px;
@@ -259,13 +277,15 @@ li {
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
   background-color: #353535;
   color: #FFFFFF;
   font-size: 1.125rem;
   padding-left: 25px;
   padding-top: 20px;
+}
+.footer__lists {
+  display: flex;
+  flex-direction: column;
 }
 .footer__title {
   font-family: "Shrikhand", serif;
@@ -279,19 +299,35 @@ li {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__lists {
+    display: flex;
+    flex-direction: row;
+  }
+}
 .restaurants {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #F6F6F6;
-  padding-right: 20px;
   padding-left: 20px;
   gap: 18px;
   padding-bottom: 60px;
+  padding-right: 20px;
 }
 .restaurants__title {
   margin-bottom: 30px;
   margin-top: 30px;
   font-size: 24px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants__lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+  }
 }/*# sourceMappingURL=main.css.map */
