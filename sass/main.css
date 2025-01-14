@@ -151,8 +151,6 @@ li {
 
 @media screen and (min-width: 768px) {
   .fonctionnement {
-    display: flex;
-    flex-direction: column;
     padding-left: 20px;
     padding-top: 15px;
   }
@@ -168,10 +166,6 @@ li {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-  }
-  .fonctionnement__title {
-    box-sizing: none;
-    padding-left: 30px;
   }
 }
 .restaurant {
