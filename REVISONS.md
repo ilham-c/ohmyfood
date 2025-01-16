@@ -25,4 +25,5 @@
 
 ### layout/
 ### utils/
- @include heart($font-weight-thin, $color-canvas-inverted, $font-size-l, $font-weight-bold);
+ @include heart($font-weight-thin, $color-canvas-inverted, $font-size-l, $font-weight-bold);border: 16px solid #f3f3f3;
+        

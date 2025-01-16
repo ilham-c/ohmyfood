@@ -30,9 +30,19 @@
 
 {
 
-.footer__lists{
+.footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    gap: 40px;
+    padding-right: 50px;
+    padding-top: 20px;
+    &__lists{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
 }
 
 }
+
