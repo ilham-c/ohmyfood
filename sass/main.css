@@ -150,11 +150,6 @@ li {
 }
 
 @media screen and (min-width: 768px) {
-  .fonctionnement {
-    padding: 10 70 10 70;
-    margin-right: 129px;
-    margin-left: 129px;
-  }
   .fonctionnement__bouton {
     width: 25%;
   }
@@ -163,6 +158,12 @@ li {
     flex-direction: row;
     justify-content: space-between;
     gap: 30px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .fonctionnement {
+    margin-right: 129px;
+    margin-left: 129px;
   }
 }
 .restaurant {
@@ -260,13 +261,27 @@ li {
   margin-left: 60px;
 }
 
+.loader-container {
+  background-color: #F3F3F3;
+  animation: fond 3s ease;
+  opacity: 1;
+}
+
+@keyframes fond {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .loader {
   border: 16px solid #F3F3F3;
-  border-top: 16px solid #3498DB;
+  border-top: 16px solid #FF79DA;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 3s linear;
+  animation: spin 4s linear;
   position: fixed;
   z-index: 1;
   opacity: 0;
@@ -305,6 +320,8 @@ li {
 .footer__link {
   margin-bottom: 8px;
   cursor: pointer;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 @media screen and (min-width: 768px) {
@@ -345,6 +362,10 @@ li {
     row-gap: 50px;
     -moz-column-gap: 29px;
          column-gap: 29px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .restaurants__lists {
     margin-right: 152px;
     margin-left: 122px;
   }

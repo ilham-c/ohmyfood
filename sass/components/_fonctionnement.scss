@@ -60,9 +60,6 @@
 {
 
 .fonctionnement{
-    padding: 10 70 10 70;
-    margin-right: 129px;
-    margin-left: 129px;
             &__bouton{
                 width: 25%  
             }
@@ -76,4 +73,12 @@
 
 
 
+}
+@media (min-width: 769px) and (max-width: 1440px)
+
+{
+.fonctionnement{
+    margin-right: 129px;
+    margin-left: 129px;
+}
 }
