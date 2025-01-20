@@ -15,6 +15,7 @@
   font-size: 1rem;
   color: #FFFFFF;
   padding-bottom: 15px;
+  margin: 0;
 }
 .footer__link {
   margin-bottom: 8px;
@@ -65,29 +66,15 @@
   margin-left: 60px;
 }
 
-.loader-container {
-  background-color: #F3F3F3;
-  animation: fond 3s ease;
-  opacity: 1;
-}
-
-@keyframes fond {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 .loader {
   border: 16px solid #F3F3F3;
   border-top: 16px solid #FF79DA;
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 4s linear;
+  animation: spin 7s linear;
   position: fixed;
-  z-index: 1;
+  z-index: 1000;
   opacity: 0;
   top: 50%;
   left: 46%;
@@ -101,6 +88,22 @@
   100% {
     opacity: 0;
     transform: rotate(360deg);
+  }
+}
+.loader-container {
+  background-color: #F3F3F3;
+  animation: fond 3s;
+}
+
+@keyframes fond {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .header {
@@ -135,13 +138,13 @@ main {
   background-color: #FFFFFF;
   font-size: 18px;
   height: 69px;
-  padding-left: 15px;
+  padding: 0.75rem;
   margin-bottom: 15px;
-  padding-bottom: 24px;
+  align-items: center;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
   opacity: 0;
-  transform: translateY(-30px);
   animation: defiler 3s ease-out forwards;
 }
 .listes__accompagnements {
@@ -160,17 +163,28 @@ main {
     transform: translateY(0);
   }
 }
+.liste-container {
+  flex: 1;
+}
+
 .price {
-  padding-right: 5px;
+  align-self: flex-end;
+  margin-right: 36px;
 }
 
 .element-hide {
   background: #99E2D0;
-  width: 50px;
-  margin: -10px;
+  width: 53px;
+  height: 95px;
+  margin: -15px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  opacity: 1;
+  margin: -0.75rem -6rem -0.75rem 1rem;
+  transition: margin-right 750ms ease;
+}
+
+.listes:hover .element-hide {
+  margin: -0.75rem -1.1rem -0.75rem 1.2rem;
 }
 
 .blocks {
@@ -231,11 +245,11 @@ main {
 }
 
 .fond-carte {
+  margin-top: -25px;
   background-color: #F6F6F6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   position: relative;
-  bottom: 27px;
 }
 
 .palettedugout-title {
@@ -306,9 +320,13 @@ main {
 
 @media screen and (min-width: 768px) {
   .fond-carte {
-    margin-right: 200px;
-    margin-left: 200px;
     padding-right: 100px;
     padding-left: 100px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .fond-carte {
+    margin-right: 200px;
+    margin-left: 200px;
   }
 }/*# sourceMappingURL=palettedugout.css.map */

@@ -30,19 +30,20 @@ main{
     background-color: #FFFFFF;
     font-size: 18px;
     height: 69px;
-    padding-left: 15px;
+    padding: 0.75rem;
     margin-bottom: 15px;
-    padding-bottom: 24px;
+    align-items: center;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
     opacity: 0;
-    transform: translateY(-30px);
     animation: defiler 3s ease-out forwards;
     &__accompagnements{
         margin-top:-15px;
         margin-left: 6px;
         font-size: 15px;
     } 
+    
     
 }
 @keyframes defiler {
@@ -55,20 +56,29 @@ main{
         transform: translateY(0);
     }
 }
-
-
-.price{
-    padding-right: 5px;
-}
-.element-hide{
-    background: #99E2D0;
-    width: 50px;
-    margin: -10px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    opacity: 1;
+.liste-container{
+    flex: 1;
     
 }
+.price{
+    align-self: flex-end;
+    margin-right: 36px;
+}
+.element-hide{
+        background: #99E2D0;
+        width: 53px;
+        height: 95px;
+        margin: -15px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin: -0.75rem -6rem -0.75rem 1rem;
+        transition: margin-right 750ms ease; 
+           
+    }
+
+.listes:hover .element-hide{
+        margin: -0.75rem -1.1rem -0.75rem 1.20rem
+    }
 
 .blocks{
     padding: 0;
@@ -118,11 +128,11 @@ main{
         }
 }
 .fond-carte{
+    margin-top: -25px;
     background-color: #F6F6F6;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     position: relative;
-    bottom: 27px;
      
    }
 
@@ -196,10 +206,15 @@ main{
 @media screen and ( min-width: 768px ) 
 {
 .fond-carte{
-    margin-right: 200px;
-    margin-left: 200px;
     padding-right: 100px;
     padding-left: 100px;
 }
 
+}
+@media (min-width: 769px) and (max-width: 1440px)
+{
+.fond-carte{
+    margin-right: 200px;
+    margin-left: 200px;
+    }
 }
