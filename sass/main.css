@@ -118,6 +118,7 @@ li {
   align-items: center;
   width: 100%;
   gap: 20px;
+  margin-bottom: 20px;
   height: 72px;
   color: #000000;
   font-family: "Roboto", sans-serif;
@@ -131,7 +132,10 @@ li {
 }
 .fonctionnement__bouton i {
   margin-left: 20px;
-  color: #7E7E7E;
+  color: #353535;
+}
+.fonctionnement__bouton i:hover {
+  color: #9356DC;
 }
 .fonctionnement__bouton span {
   background-color: #9356DC;
@@ -178,10 +182,10 @@ li {
   margin-bottom: 15px;
 }
 .restaurant__image {
+  width: 100%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   height: 251px;
-  position: relative;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -197,7 +201,6 @@ li {
   font-weight: 300;
   padding-left: 10px;
   padding-bottom: 15px;
-  position: relative;
 }
 .restaurant .nouveau {
   position: absolute;
@@ -209,23 +212,25 @@ li {
   color: #008766;
   background-color: #99E2D0;
 }
-.restaurant__like-btn {
+
+.like-btn {
   position: absolute;
   right: 50px;
   bottom: 50px;
   font-size: 30px;
 }
-.restaurant__like-btn i {
+.like-btn i {
   position: absolute;
   width: 30px;
   height: 30px;
 }
-.restaurant .my-heart-full {
+
+.my-heart-full {
   opacity: 0;
   transition-property: all;
   transition-duration: 2s;
 }
-.restaurant .my-heart-full:hover {
+.my-heart-full:hover {
   opacity: 1;
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 97%);
   background-clip: text;
@@ -267,7 +272,7 @@ li {
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 7s linear;
+  animation: spin 4s linear;
   position: fixed;
   z-index: 1000;
   opacity: 0;
@@ -285,20 +290,17 @@ li {
     transform: rotate(360deg);
   }
 }
-.loader-container {
+#fond-page {
   background-color: #F3F3F3;
-  animation: fond 3s;
+  animation: fond 3s ease-in-out 1 forwards;
 }
 
 @keyframes fond {
   0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 .footer {

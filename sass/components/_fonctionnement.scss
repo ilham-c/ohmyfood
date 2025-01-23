@@ -5,12 +5,10 @@
   padding-top: 40px;
   margin-bottom: 50px;
   padding: 0 20px;
-  
     &__title{
         font-size: $font-size-l;
         padding-top: 20px;
-        margin-left: 30px;
-        
+        margin-left: 30px;    
     }
     &__lists{
         margin-top: 35px;
@@ -22,6 +20,7 @@
         align-items: center;
         width: 100%;
         gap: 20px;
+        margin-bottom: 20px;
         height: 72px;
         color: $color-pure-inverted;
         font-family: $font-secondary;
@@ -34,7 +33,12 @@
         position: relative;
         i{
         margin-left: 20px;
-        color: #7E7E7E;
+        color: $color-canvas-dark;
+        &:hover{
+        color: $color-primaire;
+        }
+        
+
         }
         span{
             background-color: $color-primaire;

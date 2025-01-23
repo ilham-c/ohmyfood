@@ -40,7 +40,7 @@
       border-radius: 50%;
       width: 120px;
       height: 120px;
-      animation: spin 7s linear;
+      animation: spin 4s linear;
       position: fixed;
       z-index: 1000;
       opacity: 0;
@@ -56,14 +56,13 @@
         transform: rotate(360deg);
       }
     }
-    .loader-container{
+    #fond-page{
       background-color: #F3F3F3;
-      animation:fond 3s;
+      animation:fond 3s ease-in-out 1 forwards;
     }
     @keyframes fond {
-      0% {opacity:1; }
-      50% {opacity: 1;}
-      100%{ opacity:0;}
+      0% {opacity:0; }
+      100%{ opacity:1;}
     }
      
     

@@ -39,9 +39,10 @@ main{
     opacity: 0;
     animation: defiler 3s ease-out forwards;
     &__accompagnements{
-        margin-top:-15px;
-        margin-left: 6px;
-        font-size: 15px;
+        width: 85%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
     } 
     
     
@@ -58,13 +59,24 @@ main{
 }
 .liste-container{
     flex: 1;
-    
 }
+.listes__ennonces_menus{
+    width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+    
+
 .price{
     align-self: flex-end;
     margin-right: 36px;
 }
 .element-hide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: #99E2D0;
         width: 53px;
         height: 95px;
@@ -73,11 +85,21 @@ main{
         border-bottom-right-radius: 15px;
         margin: -0.75rem -6rem -0.75rem 1rem;
         transition: margin-right 750ms ease; 
-           
+        i{
+            background-color: white;
+            color: #99E2D0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }   
     }
 
 .listes:hover .element-hide{
-        margin: -0.75rem -1.1rem -0.75rem 1.20rem
+        margin: -0.75rem -1.1rem -0.75rem 0.4rem
     }
 
 .blocks{
@@ -137,6 +159,7 @@ main{
    }
 
 .palettedugout-title{
+    text-align: center;
     margin: 0;
     font-family: shrikhand, serif; 
     padding-top: 20px;
@@ -145,7 +168,7 @@ main{
     position: relative;
     span{
         position: absolute;
-        right: 15px;
+        right: 84px;
     }
 
     
