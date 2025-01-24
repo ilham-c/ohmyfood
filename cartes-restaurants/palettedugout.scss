@@ -23,6 +23,31 @@ main{
     text-decoration: none;
     font-weight: normal;
 }
+.like-btn {
+    position: absolute;
+     right: 83px;
+     bottom: 36px;
+     font-size: 30px;
+     i{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+     }
+
+   }
+  .my-heart-full{
+     opacity: 0;
+     transition-property: all;
+     transition-duration: 2s;
+       &:hover{
+       opacity: 1;
+       background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 97%);
+       background-clip: text;
+       -webkit-background-clip: text;
+       color: transparent;
+       
+     }
+    }
 
 .listes{
     list-style: none;
@@ -159,6 +184,8 @@ main{
    }
 
 .palettedugout-title{
+    display: flex;
+    flex-direction: row;
     text-align: center;
     margin: 0;
     font-family: shrikhand, serif; 
@@ -240,4 +267,20 @@ main{
     margin-right: 200px;
     margin-left: 200px;
     }
+}
+@media (min-width: 768px) and (max-width: 1440px)
+{
+.palettedugout-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: shrikhand, serif;
+    padding-top: 20px;
+    border-radius: 15px;
+    font-size: 28px;
+    position: relative;
+}
+
 }
